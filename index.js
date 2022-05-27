@@ -36,7 +36,7 @@ mongoose
     "mongodb+srv://admin:admin@cluster0.nxclk.mongodb.net/autorizationTS?authSource=admin&replicaSet=atlas-pzfzfv-shard-0&readPreference=primary&ssl=true"
   )
   .then(() => console.log("Успешное соединение..."))
-  .catch(() => console.log("Пал Бу"));
+  .catch((e) => console.log(e.toString()));
 
 let users = [];
 
